@@ -1,0 +1,104 @@
+/* universal styles */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* hero section */
+.hero {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.1)),
+    url('images/harley-davidson-zGzXsJUBQfs-unsplash.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+/* logo */
+.logo-img {
+  margin-top: 2rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+/* nav section */
+#nav-button {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  display: none;
+}
+
+#nav-button:hover {
+  color: grey;
+}
+
+#nav-menu {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0);
+  height: 100vh;
+}
+
+#nav-close {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+#nav-close:hover{
+  color: gray;
+}
+
+#nav-menu-inner li {
+  font-size: 1.5rem;
+  margin: 5rem 1.5rem;
+}
+
+/* google icons styling */
+.material-symbols-outlined {
+  font-size: 3rem;
+}
+
+/* hero heading */
+.hero h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+/* about section */
+.about {
+  height: 50vh;
+  /* background-color: rgba(32, 31, 31, 0.812); */
+  display: flex;
+}
+
+/* established div */
+.established {
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+}
+
+/* experience div */
+.experience {
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+
+.mechanic1 {
+  width: 70%;
+  height: 70%;
+  background-image: url(/images/mechanic1.jpg);
+  background-size: cover;
+  background-position: 65% 25%;
+}
