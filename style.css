@@ -1,4 +1,9 @@
 /* universal styles */
+
+html {
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -10,8 +15,8 @@ a {
   color: #fff;
   font-weight: bold;
   text-align: center;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.1)),
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.69)),
     url('images/harley-davidson-zGzXsJUBQfs-unsplash.jpg');
   background-size: cover;
   background-position: top;
@@ -39,7 +44,7 @@ a {
 
 #nav-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0);
   height: 100vh;
@@ -82,26 +87,55 @@ a {
 
 /* about section */
 .about {
-  height: 50vh;
-  /* background-color: rgba(32, 31, 31, 0.812); */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.3));
   display: flex;
+  height: 75vh;
 }
 
 /* established div */
 .established {
+  display: flex;
   width: 50%;
   height: 100%;
-  background-color: blue;
+  /* background-color: rgb(48, 48, 49); */
+}
+
+.established .text {
+  align-self: center;
+}
+
+.bw-harley {
+  margin: 1rem;
+  background-image: url('/images/b&w-harley.jpg');
+  background-size: cover;
+  width: 60%;
+  height: auto;
 }
 
 /* experience div */
 .experience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 50%;
   height: 100%;
-  background-color: red;
+  /* background-color: rgb(135, 130, 130); */
+}
+
+.experience .text {
+  width: 70%;
+}
+
+.experience .text h2 {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .mechanic1 {
+  margin-top: 1rem;
   width: 70%;
   height: 70%;
   background-image: url(/images/mechanic1.jpg);
