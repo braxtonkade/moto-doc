@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700;1,800&family=Roboto:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,700;1,800&family=Roboto:wght@100;300;400;700&display=swap"
     rel="stylesheet">
 
   <!-- google icons -->
@@ -32,56 +32,52 @@
 
   <!-- main section -->
   <main>
+
+    <!-- navigation -->
+
+    <div id="nav-button-bg"></div>
+    <a href="#/" id="nav-button" class="material-symbols-outlined">menu</a>
+
+
+    <nav>
+      <!-- <a href="#" id="nav-close">&times</a> -->
+      <button id="nav-close">&times</button>
+      <div class="nav-menu">
+        <a href="#">Services</a>
+        <a href="#">Appointments</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+
     <!-- hero section -->
     <div class="hero">
 
       <!-- logo -->
       <img src="images/logo.png" alt="" class="logo-img">
 
-      <!-- navigation -->
-      <nav>
-        <span class="material-symbols-outlined"><a href="#" id="nav-button">menu</a></span>
-        <div id="nav-menu">
-          <span class="material-symbols-outlined"><a href="#" id="nav-close">close</a></span>
-          <ul id="nav-menu-inner">
-            <a href="#">
-              <li>Services</li>
-            </a>
-            <a href="#">
-              <li>Appointments</li>
-            </a>
-            <a href="#">
-              <li>Contact</li>
-            </a>
-          </ul>
-        </div>
-      </nav>
+      <!-- old nav -->
 
       <!--hero heading -->
       <h1>If you've never owned one,<br> you'll never understand.</h1>
     </div>
 
-    <!-- about section -->
-    <div class="about">
-      <div class="established">
-        <div class="bw-harley"></div>
-
+    <!-- established section -->
+    <div class="established">
+      <div class="container">
+        <div class="harley"></div>
         <div class="text">
-          <h2>Moto Doctor Est. 2020</h2>
-        </div>
-      </div>
-      <div class="experience">
-        <div class="mechanic1"></div>
-
-        <div class="text">
-          <h2>25 years of experience</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia rem, quisquam amet repellat nobis delectus?
+          <hr>
+          <p>With over <span class="bold">25 years of experience</span> the Moto Doctor was born from one man's burning
+            passion for motorcycles
+            and a community that was in desperate need of a great mechanic.
           </p>
         </div>
-
       </div>
-
     </div>
+
+    <!-- services section -->
+
 
   </main>
 
