@@ -7,6 +7,15 @@ const navClose = document.getElementById('nav-close');
 
 const previousScrollPosition = window.scrollY;
 
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+} else {
+  window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+  };
+}
+
+
 navButton.addEventListener('click', () => {
   nav.style.top = '0';
   navButton.style.display = 'none';
@@ -25,3 +34,5 @@ window.onscroll = function () {
     navButtonBg.style.top = '0';
   }
 };
+
+
