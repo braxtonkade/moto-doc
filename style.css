@@ -22,6 +22,7 @@ a {
   font-weight: bold;
 }
 
+/* home page styles */
 /* nav section */
 
 #nav-open {
@@ -374,8 +375,57 @@ footer {
   font-size: 2rem;
 }
 
-
-
 .footer-icon:hover {
   background-color: #333333;
+}
+
+/* end of home page styles */
+
+/* services page styles */
+
+.logo-img-services {
+  width: 8rem;
+  padding: 1rem;
+}
+
+.title-wrapper {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.tile {
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 3rem 0;
+}
+
+.tile hr {
+  border: solid 1.5px #fff;
+  width: 98%;
+}
+.tile-img {
+  height: 65%;
+  background-color: #000;
+  border-radius: 25px;
+}
+
+.tile-content {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.tile-content h4 {
+  height: 100%;
+  font-size: 1.7rem;
+}
+
+.tile-img img {
+  height: 100%;
+  border-radius: 25px;
 }
