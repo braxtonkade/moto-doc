@@ -138,16 +138,22 @@ services.forEach((service, index) => {
   service.addEventListener('click', btnDropdown(index));
 });
 
+const serviceDiv = document.querySelector('.service');
+const serviceDivStyles = getComputedStyle(serviceDiv);
+const marginBottom = parseInt(serviceDivStyles.marginBottom);
+
+const btnDropdownHeight = document.querySelector('.book-service-btn').offsetHeight + marginBottom;
 
 
 function btnDropdown(index) {
-  let clicked = false;
 
+  let clicked = false;
+  
   return function (e) {
     if (clicked === false) {
       services[index].querySelector('.fa-angle-down').style.transform = 'rotate(-180deg)';
       services[index].querySelector('.book-service-btn').style.top = '100%';
-      services[index].style.marginBottom = '5rem';
+      services[index].style.marginBottom = `${btnDropdownHeight}px`;
       clicked = true;
     } else {
       services[index].querySelector('.fa-angle-down').style.transform = 'rotate(0)';
