@@ -14,7 +14,6 @@ const navContent = document.getElementById('nav-content'),
   previousScrollPosition = window.scrollY;
 
 navOpen.addEventListener('click', () => {
-  navOpen.style.transition = 'none';
   navOpen.style.color = 'black';
   navContent.style.top = '0';
 });
@@ -142,21 +141,22 @@ const serviceDiv = document.querySelector('.service');
 const serviceDivStyles = getComputedStyle(serviceDiv);
 const marginBottom = parseInt(serviceDivStyles.marginBottom);
 
-const btnDropdownHeight = document.querySelector('.book-service-btn').offsetHeight + marginBottom;
-
+const btnDropdownHeight =
+  document.querySelector('.book-service-btn').offsetHeight + marginBottom;
 
 function btnDropdown(index) {
-
   let clicked = false;
-  
+
   return function (e) {
     if (clicked === false) {
-      services[index].querySelector('.fa-angle-down').style.transform = 'rotate(-180deg)';
+      services[index].querySelector('.fa-angle-down').style.transform =
+        'rotate(-180deg)';
       services[index].querySelector('.book-service-btn').style.top = '100%';
       services[index].style.marginBottom = `${btnDropdownHeight}px`;
       clicked = true;
     } else {
-      services[index].querySelector('.fa-angle-down').style.transform = 'rotate(0)';
+      services[index].querySelector('.fa-angle-down').style.transform =
+        'rotate(0)';
       services[index].querySelector('.book-service-btn').style.top = '55%';
       services[index].style.marginBottom = '2rem';
       clicked = false;
