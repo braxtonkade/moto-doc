@@ -580,9 +580,9 @@ textarea {
 
   /* navigation */
   #nav-open {
-    font-size: 3.5rem;
+    /* font-size: 3.5rem;
     top: 2rem;
-    left: 2rem;
+    left: 2rem; */
   }
   #nav-content {
     font-size: 3rem;
@@ -649,8 +649,8 @@ textarea {
 @media screen and (min-width: 525px) {
   /* navigation */
   #nav-open {
-    top: 2.25rem;
-    left: 2.25rem;
+    /* top: 2.25rem;
+    left: 2.25rem; */
   }
   #nav-content {
     font-size: 4rem;
@@ -743,8 +743,8 @@ textarea {
 
   /* navigation */
   #nav-open {
-    top: 2.5rem;
-    left: 2.5rem;
+    /* top: 2.5rem;
+    left: 2.5rem; */
   }
   #nav-content {
     font-size: 5rem;
@@ -858,8 +858,8 @@ textarea {
 @media screen and (min-width: 750px) {
   /* navigation */
   #nav-open {
-    top: 2.75rem;
-    left: 2.75rem;
+    /* top: 2.75rem;
+    left: 2.75rem; */
   }
 
   /* home page */
@@ -905,7 +905,7 @@ textarea {
   /* navigation */
 
   #nav-open {
-    font-size: 4rem;
+    /* font-size: 4rem; */
   }
 
   /* home page */
@@ -1001,7 +1001,7 @@ textarea {
 
   /* testimonial section */
   .testimonial {
-    max-width: 625px;
+    max-width: 525px;
   }
   .content {
     font-size: 2rem;
@@ -1027,6 +1027,11 @@ textarea {
 /* screen width 1350px */
 
 @media screen and (min-width: 1350px) {
+  /* navigation */
+  #nav-button-bg {
+    /* display: none; */
+  }
+
   /* home page */
   /* hero section */
   .heading {
@@ -1051,8 +1056,8 @@ textarea {
   /* services display section */
   .services {
     margin: auto;
-    font-size: 3.25rem;
-    max-width: 1800px;
+    font-size: 3rem;
+    max-width: 1300px;
   }
 
   .services-grid {
@@ -1060,7 +1065,7 @@ textarea {
   }
 
   .services h4 {
-    font-size: 5.25rem;
+    font-size: 3.25rem;
   }
 
   .one {
@@ -1087,12 +1092,12 @@ textarea {
   /* testimonial section */
 
   .testimonial-header {
-    font-size: 4.5rem;
+    font-size: 3.25rem;
   }
   .testimonial {
-    max-width: 725px;
+    max-width: 525px;
   }
   .content {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
